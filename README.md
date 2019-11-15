@@ -7,9 +7,8 @@ saucy is a helper tool for finding Python virtual environments.
 Tired of writing:
 
 ```shell script, norun
-> . env/bin/activate
-
-(env) > .
+user@server:~/important_project/> . env/bin/activate
+(env) user@server:~/important_project/> .
 ```
 
 all the time?  Wouldn't it be easier if you _didn't_ have to type `env/bin/activate` all the time?
@@ -27,14 +26,14 @@ When you run saucy in a directory, it will print out the `activate`
 script of the first Python virtual environment it finds.  For example:
 
 ```shell script, no_run
-user@computer:~/important_project/> saucy
+user@server:~/important_project/> saucy
 /home/user/important_project/env/bin/activate
 ```
 
 Thus instead of having to type `. env/bin/activate`, you could just type:
 ```shell script, no_run
-user@computer:~/important_project/> . $(saucy)
-(env) user@computer:~/important_project/> 
+user@server:~/important_project/> . $(saucy)
+(env) user@server:~/important_project/> 
 ```
 
 But even _that_ feels like too much typing.  Instead, insert the following line
@@ -47,8 +46,8 @@ alias saucy=". $(command saucy)$"
 Now it's as easy as:
 
 ```shell script, no_run
-user@computer:~/important_project/> saucy
-(env) user@computer:~/important_project/> 
+user@server:~/important_project/> saucy
+(env) user@server:~/important_project/> 
 ```
 
 Enjoy!
