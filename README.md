@@ -23,7 +23,7 @@ cargo install saucy
 ```
 
 
-When you run saucy in a direcotry, it will print out the `activate`
+When you run saucy in a directory, it will print out the `activate`
 script of the first Python virtual environment it finds.  For example:
 
 ```shell script, no_run
