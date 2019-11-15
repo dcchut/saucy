@@ -38,10 +38,10 @@ user@computer:~/important_project/> . $(saucy)
 ```
 
 But even _that_ feels like too much typing.  Instead, insert the following line
-into your `.bash_aliases` file:
+at the bottom of your `.bashrc` file:
 
 ```shell script, no_run
-alias saucy=". $( \saucy )$"
+alias saucy=". $(command saucy)$"
 ```
 
 Now it's as easy as:
