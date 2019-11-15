@@ -6,6 +6,7 @@ edition = "2018"
 description = "A helper tool for finding Python virtual environments."
 repository = "https://github.com/dcchut/saucy"
 readme = "README.md"
+license = "MIT OR Apache-2.0"
 
 [dependencies]
 structopt = "0.3"
