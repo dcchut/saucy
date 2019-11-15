@@ -37,11 +37,11 @@ user@computer:~/important_project/> . $(saucy)
 (env) user@computer:~/important_project/> 
 ```
 
-But even _that_ feels like too much typing.  Instead, add the following line
-to your `.bash_aliases` file:
+But even _that_ feels like too much typing.  Instead, insert the following line
+into your `.bash_aliases` file:
 
 ```shell script, no_run
-alias saucy='. $(\saucy)$'
+alias saucy=". $( \saucy )$"
 ```
 
 Now it's as easy as:
