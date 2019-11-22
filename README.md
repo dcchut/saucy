@@ -39,17 +39,17 @@ user@server:~/important_project/> . $(saucy)
 (env) user@server:~/important_project/> 
 ```
 
-But even _that_ feels like too much typing.  Instead, insert the following line
-at the bottom of your `.bashrc` file:
+But even _that_ feels like too much typing.  Instead, insert
+the following line (or something similar) into your `.bash_aliases` file:
 
 ```shell script, no_run
-alias saucy=". $(command saucy)$"
+alias sa=". $(saucy)$"
 ```
 
 Now it's as easy as:
 
 ```shell script, no_run
-user@server:~/important_project/> saucy
+user@server:~/important_project/> sa
 (env) user@server:~/important_project/> 
 ```
 
