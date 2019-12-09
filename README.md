@@ -43,7 +43,7 @@ But even _that_ feels like too much typing.  Instead, insert
 the following line (or something similar) into your `.bash_aliases` file:
 
 ```shell script, no_run
-alias sa=". $(saucy)$"
+alias sa=". $(saucy)"
 ```
 
 Now it's as easy as:
