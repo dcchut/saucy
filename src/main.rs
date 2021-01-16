@@ -17,7 +17,7 @@ struct Opt {
     /// By default saucy returns the first python environment it finds.  If the `find-all` flag
     /// is enabled, then saucy will print out all of the virtual environments it finds (instead of
     /// just the first).
-    find_all : bool,
+    find_all: bool,
 }
 
 #[cfg(target_os = "windows")]
@@ -91,15 +91,14 @@ fn main() -> Result<()> {
 
         // Otherwise extend the queue with all subdirectories of this entry
         if let Ok(directory) = fs::read_dir(&entry) {
-            for file in directory
-                {
-                    let file = file?;
-                    let path = file.path();
+            for file in directory {
+                let file = file?;
+                let path = file.path();
 
-                    if path.is_dir() {
-                        queue.push_back(path);
-                    }
+                if path.is_dir() {
+                    queue.push_back(path);
                 }
+            }
         }
     }
 

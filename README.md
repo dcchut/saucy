@@ -1,7 +1,6 @@
 # saucy
 
-[![Build Status](https://travis-ci.org/dcchut/saucy.svg?branch=master)](https://travis-ci.org/dcchut/saucy)
-[![codecov](https://codecov.io/gh/dcchut/saucy/branch/master/graph/badge.svg)](https://codecov.io/gh/dcchut/saucy)
+![Build Status](https://github.com/dcchut/saucy/workflows/Push%20action/badge.svg?branch=master)
 
 saucy is a helper tool for finding Python virtual environments.
 
